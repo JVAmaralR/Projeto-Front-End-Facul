@@ -1,0 +1,239 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.514);
+    padding-bottom: 15px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+    font-size: 15px;
+}
+
+span {
+    font-size: 15px;
+    text-align: right;
+}
+
+a {
+    color: white; 
+    text-decoration: none; 
+  }
+  
+.retangulo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 5px;
+    height: 350px;
+    background-color: #ffffff;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Imagem em cima do login */
+.logimg {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    z-index: 2;
+    margin-top: -150px;
+    margin-left: 55px;
+    display: none;
+}
+
+.logimg img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Imagem da logo */
+.homelogo {
+    position: absolute;
+    width: 328px;
+    height: 500px;
+    z-index: 2;
+    top: 56%;
+    left: -145%;
+    transform: translate(-50%, -50%);
+}
+
+.homelogo img {
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+}
+
+/* Imagem em cima do cadastro */
+.homec {
+    position: absolute;
+    width: 130px;
+    height: 130px;
+    z-index: 2;
+    top: 10px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.homec img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Adiciona a imagem de fundo do login/cadastro */
+.fundo {
+    position: fixed;
+    top: 0; left: 0; /* Põe a imagem sem bordas na pagina */
+    width: 100%; height: 100%;
+    background-image: url('images/login-background.jpg'); /* URL da imagem, o "../" serve para falar que o conteúdo está em uma pasta anterior ao arquivo CSS */
+    background-size: cover; /* ajusta a imagem para cobrir a página */
+    z-index: -1; /* Layer da imagem */
+    filter: blur(3px);
+}
+
+/* Adiciona o fundo escuro a imagem de fundo */
+.fundo::before {
+    content: ''; /* Serve apenas para o CSS não indentificar o fundo como um elemento vazio */
+    position: absolute;
+    top: 0; left: 0; /* Põe o fundo sem bordas na pagina */
+    width: 100%; height: 100%; 
+    background-color: black; /* Cor do fundo */
+    z-index: -1; /* Layer do fundo */
+    opacity: 60%; /* Muda a opacidade do fundo escuro */
+}
+
+main{
+    margin-top: 25vh;
+}
+label{
+    font-size: 20px;
+}
+
+.login-area h1{
+    color: #b2744c;
+    font-size: 3em;
+}
+
+#enviado{
+    color: rgb(0, 184, 24);
+    font-size: 3em;
+}
+
+#botao {
+    background-color: rgb(0, 184, 24);
+}
+
+/* cor dos links */
+.link{
+    color: #b2744c;
+    text-decoration: none;
+    font-size: 15px;
+}
+.link:hover{
+    color: #4e2f1a;
+}
+
+.login-area{
+    position: absolute;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 45px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.14);
+    top: 50%;
+    left: 75%;
+    transform: translate(-50%, -50%);
+}
+.input-campo{
+    border-color: #b2744c;
+    border-radius: 15px;
+    border-width: 0.5px;
+    height: 1.6em;
+    padding: 3px;
+    z-index: 0;
+    width: 100%;
+    
+}
+
+.input-campo:hover{
+    background-color: rgba(255, 255, 255, 0.774);    
+}
+.input-campo:focus{
+    background-color: rgba(255, 255, 255, 0.774);
+    outline: none;
+    border-width: 2px;
+}
+
+/* Botões */
+.button{
+    font-weight: bold;
+    color: white;
+    border-radius: 18px;
+    border: none;
+    background-color: #b2744c;
+    height: 36px;
+    width: 50%;
+    margin-left: 0%;
+    margin-right: 5px;
+}
+.button:hover{
+    background-color: #4e2f1a;
+    color: rgb(255, 255, 255);
+    outline: none;
+    border: none;
+}
+
+.butto{
+    font-weight: bold;
+    color: white;
+    border-radius: 18px;
+    border: none;
+    background-color: #b2744c;
+    height: 36px;
+    width: 100%;
+    margin-left: 0%;
+    margin-right: 5px;
+}
+
+.cadastro-area{
+    white-space: nowrap;
+    position: relative;
+    margin-top: -50px;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 45px;
+    padding-top: 80px;
+    border-radius: 16px;
+    box-shadow: 0 0 10px rgb(0, 0, 0, 0.14);
+}
+.cadastro-area h1{
+    color: #b2744c;
+    font-size: 3.8em;
+}
+
+@media screen and (max-width: 1050px) {
+    .retangulo {
+        display: none;
+    }
+
+    .homelogo{
+        display: none;
+    }
+
+    .login-area {
+        position: relative;
+        top: 40%;
+        left: 50%;
+        padding-top: 80px;
+    }
+
+    .logimg {
+        display: block;
+    }
+}

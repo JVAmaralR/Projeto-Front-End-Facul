@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="favicons" href="image/favicons.ico" type="image/ico">
+    <title>Cadastro - Coffee Shop</title>
+    
+    <link rel="stylesheet" href="login-cadastro.css">
+  </head>
+  <body>
+    <main>
+
+      <div class="cadastro-area">
+      <h1>Cadastrar</h1><br>
+        <form action="back-end/controlador-cadastro.php" method="post">
+          <div class="homec"><a href="index.php"><img src="images/favicon.ico.png" alt="home"></a></div> <!-- div que vai receber a imagem da home -->
+            <label>&ensp;Email<br>
+            <input type="email" name="email" class="input-campo" required id="input-email" size="28" placeholder="  exmp@clinicor.com"></label><br><br>
+            <label>&ensp;Senha<br>
+            <input type="password" name="senha" class="input-campo" required id="input-senha" size="28" placeholder="  •••••••"></label><br><br>
+            <label>&ensp;Confirmar Senha<br>
+            <input type="password" name="senha-confirmar" class="input-campo" required id="input-confirmar-senha" size="28"></label><br><br>
+            <button class="button" type="button"><a href="login.html">Cancelar</a></button>
+            <input type="submit" value="Concluir" class="button">
+        </form>
+      </div>
+
+      <div class="fundo"></div> <!-- div que vai receber a imagem de fundo -->
+    </main>
+    
+    <footer>
+      
+    </footer>
+  </body>
+</html>
