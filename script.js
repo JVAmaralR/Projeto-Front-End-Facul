@@ -27,6 +27,18 @@ function log() {
     }
 }
 
+function men() {
+    let valorR = JSON.parse(localStorage.getItem(chave));
+    if (valorR.logado === "deslogado") {
+        alert("Faça login para comprar!");
+        window.location.href = "login.html";
+    }
+
+    if (valorR.logado === "logado") {
+        alert("Sem Estoque!");
+    }
+}
+
 function entrar() {
     let valorR = JSON.parse(localStorage.getItem(chave));
     valorR.logado = "logado";
