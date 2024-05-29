@@ -19,12 +19,12 @@
       <div class="logimg"><a href="index.html"><img src="images/favicon.ico.png" alt="home"></a></div> <!-- Div que recebe a imagem da home -->
       
       <h1>Login</h1><br> <!-- Título da página de login -->
-        <form action="back-end/controlador-login.php" method="post"> <!-- Formulário de login -->
+        <form action="index.html" method="post"> <!-- Formulário de login -->
             <label><i>&ensp;Email</i><br> <!-- Campo de entrada para o email -->
             <input type="email" name="email" class="input-campo" required id="input-email" size="26" placeholder=" exmp@clinicor.com"></label><br><br>
             <label><i>&ensp;Senha</i><br> <!-- Campo de entrada para a senha -->
             <input type="password" name="senha" class="input-campo" required id="input-senha" size="26" placeholder=" •••••••"></label><br><br>
-            <input type="submit" value="Entrar" class="button"> <!-- Botão de envio do formulário -->
+            <input type="submit" value="Entrar" class="button" onclick="entrar()"> <!-- Botão de envio do formulário -->
             <span><a href="cadastro_recuperar_senha.html" class="link">Esqueci a senha</a></span> <!-- Link para redefinição de senha -->
         </form><br>
         <p>Não é Cadastrado? <a href="cadastro_user.html" class="link">cadastre-se aqui.</a></p> <!-- Link para a página de cadastro -->
@@ -38,5 +38,7 @@
     <footer> <!-- Rodapé da página -->
       
     </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>

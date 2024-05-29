@@ -19,9 +19,18 @@ function log() {
     let valorR = JSON.parse(localStorage.getItem(chave));
     if (valorR.logado === "deslogado") {
         alert("Faça login para comprar!");
-        valorR.logado = "logado";
-        localStorage.setItem(chave, JSON.stringify(valorR));
+        window.location.href = "login.html";
     }
+
+    if (valorR.logado === "logado") {
+        document.getElementById("product").scrollIntoView({ behavior: "smooth" });
+    }
+}
+
+function entrar() {
+    let valorR = JSON.parse(localStorage.getItem(chave));
+    valorR.logado = "logado";
+    localStorage.setItem(chave, JSON.stringify(valorR));
 }
 
 window.onblur = function() {

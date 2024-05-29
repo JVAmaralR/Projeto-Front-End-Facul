@@ -244,12 +244,10 @@ html::-webkit-scrollbar{
   float: right;
   cursor: pointer;
 }
-.menu a {
-  color: #b2744c;
-}
-.menu a:hover {
+.menu p span:hover{
   color: #4e2f1a;
 }
+
 /* menu */
 
 
@@ -288,10 +286,7 @@ html::-webkit-scrollbar{
   float: right;
   cursor: pointer;
 }
-.product a {
-  color: #b2744c;
-}
-.product a:hover {
+.product p span:hover{
   color: #4e2f1a;
 }
 /* product */
