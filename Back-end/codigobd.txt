@@ -1,0 +1,11 @@
+create database grabieldb;
+use grabieldb;
+
+CREATE TABLE Usuarios (
+    UsuarioID INT PRIMARY KEY auto_increment,
+     Email VARCHAR(100),
+     Nome VARCHAR(100),
+    Senha VARCHAR(100),
+    DataRegistro DATE,
+    CodigoRecuperaSenha varchar(8) 
+);
