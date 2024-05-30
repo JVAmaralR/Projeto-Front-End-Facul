@@ -25,3 +25,5 @@ if (req.method === "POST") {
     // Método de requisição inválido
     res.status(405).send("Método de requisição inválido");
 }
+
+module.exports = { logincontroler};
